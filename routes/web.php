@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ApiController;
+use App\Http\Controllers\Apicontroller;
 
 /*
 |--------------------------------------------------------------------------
@@ -91,6 +91,6 @@ route::get('/18generic', function () {
     return view('Template.18generic');
 })->name('18generic');
 
-Route::get('/',[ApiController::class, 'inicio'])->name('inicio');
+Route::get('/',[Apicontroller::class, 'inicio'])->name('inicio');
 
-Route::get('/personaje/{id}',[ApiController::class, 'detallePersonaje'])->name('detalle.personaje');
+Route::get('/personaje/{id}',[Apicontroller::class, 'detallePersonaje'])->name('detalle.personaje');
