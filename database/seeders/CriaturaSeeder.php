@@ -28,4 +28,5 @@ class CriaturaSeeder extends Seeder
             ]);
         }
     }
+    
 }
